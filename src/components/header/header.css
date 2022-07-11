@@ -72,6 +72,7 @@ header {
 /* ================ PHONE ============ */
 @media screen and (max-width: 600px) {
     .header__socials, .scroll__down {
+        height: 100vh;
         display: none;
     }
 }
