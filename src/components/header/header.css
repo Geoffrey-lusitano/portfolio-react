@@ -42,15 +42,20 @@ header {
 /* ===================== ME ========================== */
 
 .me {
-    background: linear-gradient(var(--color-primary), transparent);
-    width: 22rem;
-    height: 30rem;
+
+    width: 40rem;
+    height: 50rem;
     position: absolute;
-    left: calc(50% - 11rem);
+    left: calc(50% - 20rem);
     margin-top: 4rem;
-    border-radius: 12rem 12rem 0 0;
+    border-radius: 2rem;
     overflow: hidden;
     padding: 5rem 1.5rem 1.5rem 1.5rem;
+
+}
+
+.me img {
+    border-radius: 2rem;
 }
 
 /* ===================== Scroll Down ========================== */
@@ -71,8 +76,14 @@ header {
 
 /* ================ PHONE ============ */
 @media screen and (max-width: 600px) {
+    header {
+        height: 40vh;
+    }
     .header__socials, .scroll__down {
-        height: 100vh;
         display: none;
     }
+    .me {
+        display: none;
+    }
+
 }
